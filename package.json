@@ -1,0 +1,28 @@
+{
+  "name": "amikom-ai-free-gateway",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible gateway for the AMIKOM agentic AI backend (ai.amikom.ac.id). Lets agentic harnesses such as pi, Cursor, Continue, etc. use the MIKO team agent as a normal chat model.",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "amikom-gateway": "server.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "smoke": "bash test/smoke.sh"
+  },
+  "keywords": [
+    "openai",
+    "gateway",
+    "proxy",
+    "amikom",
+    "pi-agent",
+    "llm"
+  ],
+  "license": "MIT",
+  "private": true
+}

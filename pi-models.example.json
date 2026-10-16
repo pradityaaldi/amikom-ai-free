@@ -1,0 +1,30 @@
+{
+  "providers": {
+    "amikom": {
+      "baseUrl": "http://127.0.0.1:8787/v1",
+      "api": "openai-completions",
+      "apiKey": "amikom-free",
+      "models": [
+        {
+          "id": "miko",
+          "name": "MIKO (AMIKOM Agentic)",
+          "reasoning": true,
+          "input": ["text"],
+          "output": ["text"],
+          "contextWindow": 128000,
+          "maxTokens": 8192,
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "compat": {
+            "sendSessionAffinityHeaders": true,
+            "sessionAffinityFormat": "openai",
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": false,
+            "supportsUsageInStreaming": true,
+            "supportsFinishReason": true
+          }
+        }
+      ]
+    }
+  }
+}
